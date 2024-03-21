@@ -1,0 +1,21 @@
+.contendorEducacion{
+    grid-area: educacion;
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    width: 80%;
+    background-color: var(--color-secciones);
+    margin: auto;
+}
+
+.contenedor__certificados fieldset> table{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.contenedor__certificadsos fieldset> ul li{
+    margin: auto;
+    padding: 10px;
+    list-style: none;
+}

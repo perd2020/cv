@@ -1,0 +1,13 @@
+.experiencia{
+    grid-area: experiencia;
+    width: 80%;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 900;
+    margin: auto;
+    background-color: var(--color-secciones);
+}
+

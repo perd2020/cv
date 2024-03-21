@@ -1,0 +1,30 @@
+/* footer*/
+
+footer{
+    grid-area: footer;
+    position: relative;
+    top: 50;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    background-color:var(--color-secciones);
+    padding: 5px;
+    text-align: center;    
+}
+
+.logo{
+    width: 40px ;
+    margin-left: 5px;
+    transition: all 1.5s ease-in-out;
+    border: 2px solid var(--color-menu);
+    transition: all 2s ease;
+}
+
+
+
+.footer a>.logo:hover{
+    transform: scale(1.1);
+    background-color: var(--color-principal);
+    box-shadow: 10px 20px 10px rgba(143, 33, 143, 0.548) ;
+}

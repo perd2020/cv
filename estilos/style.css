@@ -1,0 +1,97 @@
+
+
+:root{
+    --font-principal:@import url('https://fonts.googleapis.com/css2? family= Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700;1,900 & display=swap');
+    
+    --font-size:16px;
+    --font-size-title:1.7rem;
+    --font-size-subtitle:1.5rem;
+    --font-size-text:1.2rem;
+    
+    --font-color-principal:rgb(178, 237, 239);
+    --font-color-blanco:rgb(255, 255, 255);
+    --color-font-oscuro:#000;
+    --color-fondo-oscuro:#203c60;
+
+    --color-secciones:rgba(23, 59, 91, 0.896);   
+    
+    --color-transp :rgba(33, 76, 113, 0.531);
+    --color-transp-secundario:rgba(119, 222, 226, 0.431);
+    --color-menu:rgba(68, 119, 158, 0.695) ;
+
+    --color-btn:#054f5e;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+    }
+    
+    *,
+    *:before,
+    *:after {
+    box-sizing: inherit;
+    }
+    
+    img,
+    video {
+    max-width: 100%;
+    height: auto;
+    }
+
+body{   
+    max-width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+
+    font-family: var(--font-principal);
+    color:var(--font-color-principal);
+    background-image: url('/assets/img/fondoazul.jpg');
+    background-attachment: fixed;
+    background-color: var(--color-fondo-oscuro);
+
+}
+a{
+    text-decoration: none;
+    color: var(--font-color-principal);
+}
+
+/* :active{
+    box-shadow: none;
+    
+} */
+
+/*estilos  generales*/
+
+
+.contenedorPrincipal {
+	width: 100vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+
+    
+
+    /* height: auto; */
+	/* max-width: 75em; */
+	/* margin: 1.25em ; */
+    /* margin-left: 100px; */
+    /* margin-right: 200px; */
+	display: grid;
+	grid-gap: 1.25em;
+	grid-template-columns: 1fr 7fr 1fr;
+	grid-template-rows: 7fr 4fr 2fr 1fr;
+	grid-template-areas:
+		'encabezado		encabezado 	encabezado'
+        'acercaDeMi     acercaDeMi  acercaDeMi'
+		'proyectos		proyectos 	proyectos'		
+        'experiencia    experiencia experiencia'
+        'educacion      educacion   educacion'
+		'footer	 		footer 		footer';
+}

@@ -1,0 +1,101 @@
+/*encabezado perfil foto titulo */
+.encabezado{
+    grid-area: encabezado;
+    /* width: 100%; */
+    background-color: var(--color-transp);
+
+    position: relative;
+    z-index: 900;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    display: grid;
+    /* gap: 10px; */
+    justify-content: space-between;
+    align-items: flex-end;
+    /* grid-template-columns: 1fr 3fr; */
+    /* grid-template-rows: 6fr 1fr; */
+}
+.contenedor__fotoPerfil{
+    /* grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+    width: 500px;
+    /* margin-left: 0vh; */
+}
+.fotoperfil{
+    width: 100%;
+    margin: auto;
+    transform: .3s ease-in-out;
+}
+.fotoperfil:hover{
+transform: scale(1.2) rotate(20deg);
+/* translate: (0,0px); */
+
+}
+.tituloPrincipal{
+    width:90%;
+    /* margin-top:1vw; */
+    /* margin-left: 1vh; */
+    color: var(--color-principal);
+    text-align: end;
+    font-size: large;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.hola{
+    
+    font-size: 2.5rem;
+    transition: all 3s ease;
+}
+.hola:hover{
+    translate: -100px;
+    transform-style: flat;
+    color: chartreuse;
+}
+
+.subtitulo{
+    font-size: 2.5rem;
+};
+
+.nombre{
+    font-size:3.75rem;
+}
+
+
+
+/* tecnologias*/
+.contenedorTecnologias{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 0;
+    background-color:var(--color-transp );
+    display: flex;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.logo-tec{
+    width: 40px;
+    /* padding-left: 10px; */
+    margin: 0 auto ;
+}
+
+
+/*medias querys*/
+@media screen and (max-width:500px) {
+    .contenedorPerfil{
+        position: relative;
+        top: 5vh;
+    }
+    .contenedorPerfil .h2{
+        display: none;
+    }
+
+}
