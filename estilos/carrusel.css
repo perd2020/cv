@@ -79,6 +79,8 @@
     }
     
     /* botones */
+
+
     .slider-btns {
     position: absolute;
     width: 100%;
@@ -86,25 +88,28 @@
 
     z-index: 910;
 
-
+    
+    
     display: flex;
     justify-content: space-between;
-    font-size:3rem;
+    font-size:5rem;
     font-weight: bold;
-    }
-    .slider-btns .next,
-    .slider-btns .prev{
-        background-color: #000;
-        border: 2px solid #000;
-        color: var(--font-color-principal);
-        border-radius: 25px;
-    }
+}
+
+.slider-btns .next,
+.slider-btns .prev{
+    background-color: #000;
+    border: 2px solid #000;
+    color: var(--font-color-principal);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.btn_github {
+    display: block;
     
-    
-    .btn_github {
-        display: block;
-        
-        height: 4rem;
+    height: 4rem;
         border-radius: 25px;
         border: thin solid #000;
 
@@ -118,18 +123,18 @@
     .btn_github a:hover {
         color: #4d4d4d;
     }
-
-
+    
+    
     /* .video_demo{
         width: 60%;
         height: auto;
         margin: 5px;
         display: none;
     }
-     */ 
+    */ 
     
     
-    @media screen {(max-width:  800px;)
+    /* @media screen {(max-width:  800px;)
         .contenedor__acercaDeMi{}
     }
-    
+     */

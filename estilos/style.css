@@ -6,20 +6,30 @@
     --font-size:16px;
     --font-size-title:1.7rem;
     --font-size-subtitle:1.5rem;
-    --font-size-text:1.2rem;
+    --font-size-text:1rem;
     
     --font-color-principal:rgb(178, 237, 239);
     --font-color-blanco:rgb(255, 255, 255);
     --color-font-oscuro:#000;
     --color-fondo-oscuro:#203c60;
 
-    --color-secciones:rgba(23, 59, 91, 0.896);   
+    --color-secciones:rgba(175, 117, 191, 0.857);   
     
-    --color-transp :rgba(33, 76, 113, 0.531);
+    /* --color-transp :rgba(143, 96, 191, 1); */
     --color-transp-secundario:rgba(119, 222, 226, 0.431);
     --color-menu:rgba(68, 119, 158, 0.695) ;
 
     --color-btn:#054f5e;
+    --color-btn-secundario:#26a4bd;
+    
+/* Color Theme Swatches in RGBA */
+.Landscape-on-a-frosty-morning-1-rgba { color: rgba(175, 117, 191, 1); }
+.Landscape-on-a-frosty-morning-2-rgba { color: rgba(143, 96, 191, 1); }
+.Landscape-on-a-frosty-morning-3-rgba { color: rgba(79, 94, 140, 1); }
+.Landscape-on-a-frosty-morning-4-rgba { color: rgba(163, 176, 217, 1); }
+.Landscape-on-a-frosty-morning-5-rgba { color: rgba(201, 211, 242, 1); }
+
+
 }
 
 
@@ -50,25 +60,25 @@ body{
     font-family: var(--font-principal);
     color:var(--font-color-principal);
     background-image: url('/assets/img/fondoazul.jpg');
+    border-image-repeat: none;
     background-attachment: fixed;
     background-color: var(--color-fondo-oscuro);
 
 }
+
 a{
     text-decoration: none;
     color: var(--font-color-principal);
 }
 
-/* :active{
-    box-shadow: none;
-    
-} */
+
+
 
 /*estilos  generales*/
 
 
 .contenedorPrincipal {
-	width: 100vw;
+	width: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -76,16 +86,9 @@ a{
     right: 0;
     z-index: 900;
 
-    
-
-    /* height: auto; */
-	/* max-width: 75em; */
-	/* margin: 1.25em ; */
-    /* margin-left: 100px; */
-    /* margin-right: 200px; */
 	display: grid;
 	grid-gap: 1.25em;
-	grid-template-columns: 1fr 7fr 1fr;
+	grid-template-columns: 10% 80% 10%;
 	grid-template-rows: 7fr 4fr 2fr 1fr;
 	grid-template-areas:
 		'encabezado		encabezado 	encabezado'
@@ -95,3 +98,48 @@ a{
         'educacion      educacion   educacion'
 		'footer	 		footer 		footer';
 }
+
+/* titulos de todas las secciones */
+.titlePrincipal{
+    font-size: var(--font-size-subtitle);
+    text-align: center;
+    border-bottom: 5px solid #000;
+}
+
+/* botones principales */
+.btn{
+    background-color: var(--color-btn);
+    border: 2PX solid #054f5e;
+    border-radius: 25px;
+    width: auto;
+    cursor: pointer;
+    
+    width: auto;
+    padding: 10px;
+    margin: 5px;
+    
+}
+
+.btn_volverArriba {
+    position: fixed;
+    top: 90vh;
+    bottom: 10vh;
+    left: 10vw;
+    z-index: 999;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+
+    width: auto;
+    padding: 20px;
+
+    /* text-align: center; */
+}
+
+
+/* secciones */
+.section{
+    background-color: var(--color-secciones);
+}
+
