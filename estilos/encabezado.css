@@ -2,95 +2,160 @@
 .encabezado{
     grid-area: encabezado;
     display: grid;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+
 
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    
+    margin-top: 10%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* gap: 100px; */
     justify-content: space-around;
-    align-items: first baseline;
+    align-content: space-around;
 }
 .contenedor__fotoPerfil{
-    max-width: 500px;
-    padding: 0;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin:0;
+    width: 300px;
 }
+
 .fotoperfil{
-    width: 100em;
+    width: 300px;
+    margin-left: 50px;
     cursor: pointer;
     transform: all .3s ease-in-out;
 }
+
 .fotoperfil:hover{
 transform: scale(1.2) rotate(20deg);
 
 }
 .tituloPrincipal{
-    width:90%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: var(--color-principal);
+    
+    color: rgb(236, 152, 243);
+
+    width:60%;
+    padding-right: 20px;
+    /* margin-top: 10%; */
+    margin-right: 500px;
+    margin-left: 0;
     text-align: end;
-    font-size: 1rem;
+    /* font-size: ;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 600; */
+
+    border: 15px ridge var(--color-menu);
+    border-radius: 25px;
 }
 
 .hola{
     
-    /* font-size: 2.5rem; */
-    transition: all 1s ease;
+    font-size: medium;
+    transition: all 1s ease-out;
     cursor: pointer;
 }
 .hola:hover{
-    translate: -100px;
+    font-size: xx-large;
+    translate: -10%;
     transform-style: flat;
     color: chartreuse;
 }
 
 .subtitulo{
-    font-size: 2.5rem;
+    font-size: medium;
 };
 
 .nombre{
-    font-size:3.75rem;
+    font-size:large;
+}
+
+/* botones de contacto */
+.contenedor_botones-contacto{
+    /* width: 5%; */
+    /* margin-bottom: 10px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+    background-color:var(--color-menu);
+
+    position: fixed;
+    top:0px;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    border: 5px solid var(--color-menu);
+    border-radius: 15px;
+}
+
+.logo_cabecera{
+    height: 40px;
+    padding: 2px;
+    transition: all 1.8s ease;
+    
+}
+
+
+
+
+.logo_cabecera:hover{
+    transform: scale(1.2);
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-radius: 25px;
 }
 
 
 
 /* tecnologias*/
 .contenedorTecnologias{
-    width: 100%;
-    height: 45px;
-    margin-bottom: 0;
-    background-color:var(--color-transp );
+    width: 96%;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    /* margin-right: 20px; */
+    background-color:var(--color-menu);
     display: flex;
     align-items: center;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+
+
+    border: 5px ridge var(--color-menu);
+    border-radius: 25px;
 }
 
 .logo-tec{
-    width: 1em;
+    width: 3em;
     /* padding-left: 10px; */
     margin: 0 auto ;
 }
 
 
 /*medias querys*/
-@media screen and (max-width:500px) {
-    .contenedorPerfil{
-        /* position: relative; */
-        top: 50vh;
-    }
+@media screen and (max-width:800px) {
+    
     .contenedorPerfil {
         display: none;
+    }
+    .contenedor_botones-contacto{
+        background-color: #fff;
+    }
+    .contenedor__fotoPerfil{
+        display: none;
+    }
+    .tituloPrincipal{
+        background-color: none;
+        width: 100%;
+        margin-left: 20%;
+        font-size: 20px;
+    }
+    .subtitulo
+    {
+        font-size: x-small;
     }
 
 }
