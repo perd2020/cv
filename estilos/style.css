@@ -11,7 +11,7 @@
     --font-color-principal:rgb(178, 237, 239);
     --font-color-blanco:rgb(255, 255, 255);
     --color-font-oscuro:#000;
-    --color-fondo-oscuro:#203c60;
+    --color-fondo-oscuro:rgb(4, 2, 50);
 
     --color-secciones:rgba(175, 117, 191, 0.857);   
     
@@ -59,9 +59,10 @@ body{
 
     font-family: var(--font-principal);
     color:var(--font-color-principal);
-    background-image: url('/assets/imgFondo/fondoazul.jpg');
+    /* background-image: url('/assets/imgFondo/marco5.png');
+    background-position: top center;
     border-image-repeat: none;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     background-color: var(--color-fondo-oscuro);
 
 }
@@ -79,6 +80,8 @@ a{
 
 .contenedorPrincipal {
 	width: 100%;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -87,7 +90,7 @@ a{
     z-index: 900;
 
 	display: grid;
-	grid-gap: 1.25em;
+	grid-gap: 1em;
 	grid-template-columns: 10% 80% 10%;
 	grid-template-rows: 100% 100% 100% repeat(auto);
 	grid-template-areas:
@@ -103,7 +106,9 @@ a{
 .titlePrincipal{
     font-size: var(--font-size-subtitle);
     text-align: center;
-    border-bottom: 5px solid #000;
+    padding: 5px;
+    border: 15px ridge var(--color-menu);
+    border-radius: 25px;
 }
 
 /* botones principales */
@@ -141,5 +146,84 @@ a{
 /* secciones */
 .section{
     background-color: var(--color-secciones);
+    border: 5px ridge var(--color-menu);
+    border-radius: 25px;
 }
 
+
+
+/*medias querys*/
+@media screen and (max-width:800px) {
+    
+
+.contenedorPrincipal {
+	width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+
+	display: grid;
+	grid-gap: 1.25em;
+	grid-template-columns: 10% 90% ;
+	grid-template-rows: repeat(1fr);
+	grid-template-areas:
+		'encabezado		encabezado '
+        'acercaDeMi     acercaDeMi '
+		'proyectos		proyectos '		
+        'experiencia    experiencia'
+        'educacion      educacion'
+		'footer	 		footer';
+}
+
+/* titulos de todas las secciones */
+.titlePrincipal{
+    font-size: var(--font-size-subtitle);
+    text-align: center;
+    padding: 5px;
+    border: 15px ridge var(--color-menu);
+    border-radius: 25px;
+}
+
+/* botones principales */
+.btn{
+    background-color: var(--color-btn);
+    border: 2PX solid #054f5e;
+    border-radius: 25px;
+    width: auto;
+    cursor: pointer;
+    
+    width: auto;
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+.btn_volverArriba {
+    position: fixed;
+    top: 90vh;
+    bottom: 10vh;
+    left: 10vw;
+    z-index: 999;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+
+    width: auto;
+    padding: 20px;
+
+    /* text-align: center; */
+}
+
+
+/* secciones */
+.section{
+    background-color: var(--color-secciones);
+    border: 5px ridge var(--color-menu);
+    border-radius: 25px;
+}
+
+}

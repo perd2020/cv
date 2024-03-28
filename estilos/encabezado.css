@@ -6,19 +6,19 @@
 
     width: 100%;
     margin-top: 10%;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    /* gap: 100px; */
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
     justify-content: space-around;
-    align-content: space-around;
+    align-items: space-around;
 }
 .contenedor__fotoPerfil{
     margin:0;
-    width: 300px;
+    /* width: 300px; */
 }
 
 .fotoperfil{
-    width: 300px;
+    width: 200px;
     margin-left: 50px;
     cursor: pointer;
     transform: all .3s ease-in-out;
@@ -30,41 +30,41 @@ transform: scale(1.2) rotate(20deg);
 }
 .tituloPrincipal{
     
-    color: rgb(236, 152, 243);
+    color: rgb(238, 231, 14);
 
-    width:60%;
+    width:100%;
     padding-right: 20px;
     /* margin-top: 10%; */
-    margin-right: 500px;
-    margin-left: 0;
+    /* margin-right: 0px; */
+    /* margin-left: 0; */
     text-align: end;
     /* font-size: ;
     font-style: italic;
     font-weight: 600; */
 
-    border: 15px ridge var(--color-menu);
-    border-radius: 25px;
+    /* border: 15px ridge var(--color-menu); */
+    /* border-radius: 25px; */
 }
 
 .hola{
     
-    font-size: medium;
+    font-size: 2rem;
     transition: all 1s ease-out;
     cursor: pointer;
 }
 .hola:hover{
-    font-size: xx-large;
+    /* font-size: xx-large; */
     translate: -10%;
-    transform-style: flat;
+    /* transform-style: flat; */
     color: chartreuse;
 }
 
 .subtitulo{
-    font-size: medium;
+    font-size: 2.5rem;
 };
 
 .nombre{
-    font-size:large;
+    font-size:3rem;
 }
 
 /* botones de contacto */
@@ -76,7 +76,7 @@ transform: scale(1.2) rotate(20deg);
     justify-content: space-around;
     
 
-    background-color:var(--color-menu);
+    background-color:var(--color-secciones);
 
     position: fixed;
     top:0px;
@@ -130,8 +130,14 @@ transform: scale(1.2) rotate(20deg);
 
 .logo-tec{
     width: 3em;
-    /* padding-left: 10px; */
     margin: 0 auto ;
+
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.logo-tec:hover{
+    transform: rotate(180deg);
+    /* rotate: (45deg); */
 }
 
 
@@ -156,6 +162,12 @@ transform: scale(1.2) rotate(20deg);
     .subtitulo
     {
         font-size: x-small;
+    }
+
+    .logo-tec{
+        width: 2em;
+        margin: 0 auto ;
+    
     }
 
 }

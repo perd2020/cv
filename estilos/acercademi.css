@@ -1,28 +1,10 @@
 .acercaDeMi{
     grid-area: acercaDeMi;
     width: 100%;
-    display: grid;
-
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3; 
-
-    justify-content: center;
-    align-items: center;
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.contenedor_acercaDeMi{
-    /* background-color: blue; */
-
     display: flex;
-    justify-items: baseline;
-    align-items: center;
-    gap: 100px;
+    flex-direction: column;
 }
+
 
 
 .contenedor_texto{
@@ -62,4 +44,38 @@
 }
 
 
+/*medias querys*/
+@media screen and (max-width:800px){
+    .acercaDeMi{
+        grid-area: acercaDeMi;
+        width: 90%;
+        font-size: 1rem;
+    }
+    
+    
+    .contenedor_acercaDeMi{
+        background-color: blue;
+        
+        display: flex;
+        flex-direction: column;
+        justify-items: baseline;
+        align-items: center;
+        /* gap: 10px; */
+    }
+    
+    
+    .contenedor_texto{
+    
+        width: 100%;
+        border-radius: 25px;
+    }
 
+    
+    
+    .video video{
+        width: 50PX;
+        height: 100%;
+
+    }
+    
+}

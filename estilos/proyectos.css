@@ -3,7 +3,10 @@
 
 
 .contenedorProyectos {
-    grid-area: proyectos;   
+    grid-area: proyectos; 
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .proyectos{
@@ -58,12 +61,19 @@
 
     }
     
-    /* .slider-slide.active {
-    opacity: 1;
-    visibility: visible;
-    } */
-    
-    /* botones */
+    .proyecto_contenedor-tecnologias{
+        /* background: #000; */
+        width: 100%;
+        padding: 20px;
+
+        display: flex;
+        justify-content: space-around;
+    }
+    .proyecto_contenedor-tecnologias img{
+        width: 40px;
+        height: 40px;
+    }
+
 
 
     .btn_proyecto {
