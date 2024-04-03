@@ -1,16 +1,26 @@
-.contendorEducacion{
-    grid-area: educacion;
-    position: relative;
-    left: 0;
+.titleEduc{
+    position: absolute;
+    top: 2%;
     right: 0;
-    z-index: 900;
-    width: 80%;
+
+}
+.contendorEducacion{
+    
+
+    width: var(--ancho-max-contenedorPrincipal);
     background-color: var(--color-secciones);
-    margin: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.cabeceraEducacion h1{
+    margin-top: 150px;
+    margin-left: 50%;
+    width: fit-content;
 }
 
 .contenedor__certificados fieldset> table{

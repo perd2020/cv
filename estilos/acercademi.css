@@ -1,6 +1,18 @@
+.contenedor_acercaDeMi{
+    max-width: inherit;
+    display: flex;
+    flex-direction: column;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+
+
+
+
 .acercaDeMi{
     grid-area: acercaDeMi;
-    width: 100%;
+    width: var(--ancho-contenedorPrincipal);
     display: flex;
     flex-direction: column;
 }
@@ -9,10 +21,10 @@
 
 .contenedor_texto{
     /* background-color: #2e93db; */
-    width: 60%;
+    width:inherit;
     text-wrap: pretty;
 
-    margin: 20px;
+    margin: var(--margen-contenidoSecciones);
 
     border: 5px solid var(--color-menu);
         border-radius: 25px;
@@ -23,9 +35,9 @@
 
 .acercaDeMi__txt {
     font-size:var(--font-size-text);
-    width: 100%;
+    width: inherit;
     text-align: center;
-    padding:10px;
+    /* padding:10px; */
 }
 
 
@@ -33,7 +45,7 @@
     width: 200px;
     height: 200px;
     /* padding: 2px; */
-    /* margin:  0 ; */
+    margin-left:  500px ;
     /* margin-top: 50vh; */
     border: 5px solid var(--color-menu);
         border-radius: 25px;
