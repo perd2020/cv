@@ -30,7 +30,7 @@ transform: scale(1.2) rotate(20deg);
 }
 .tituloPrincipal{
     
-    color: rgb(238, 231, 14);
+    color:var(--font-color-principal);
 
     width:100%;
     padding-right: 20px;
@@ -46,25 +46,25 @@ transform: scale(1.2) rotate(20deg);
     /* border-radius: 25px; */
 }
 
-.hola{
+#hola{
     
-    font-size: 2rem;
-    transition: all 1s ease-out;
+    font-size: 3rem;
     cursor: pointer;
+    transition: all 2s ease-out;
 }
-.hola:hover{
+#hola:hover{
     /* font-size: xx-large; */
-    translate: -10%;
+    translate: -100px;
     /* transform-style: flat; */
     color: chartreuse;
 }
 
-.subtitulo{
-    font-size: 2.5rem;
+#puesto{
+    font-size:55px ;
 };
 
-.nombre{
-    font-size:3rem;
+#nombre{
+    font-size:60px;
 }
 
 /* botones de contacto */
@@ -76,7 +76,7 @@ transform: scale(1.2) rotate(20deg);
     justify-content: space-around;
     
 
-    background-color:var(--color-secciones);
+    background-color:var(--color-barraTecnologia);
 
     position: fixed;
     top:0px;
@@ -115,7 +115,7 @@ transform: scale(1.2) rotate(20deg);
     margin-bottom: 5px;
     margin-top: 15px;
     /* margin-right: 20px; */
-    background-color:var(--color-menu);
+    background-color:var(--color-barraTecnologia);
     display: flex;
     align-items: center;
     grid-column-start: 1;
